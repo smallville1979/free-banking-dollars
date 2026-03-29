@@ -121,6 +121,50 @@ body{background:#0a0a0a;color:#fff;font-family:'Nunito',sans-serif;overflow-x:hi
 </div></div>
 
 <!-- MAIN DEALS -->
+
+<!-- LLOYDS COMPLAINT -->
+<div style="background:#1a0000;border:2px solid #FF1744;border-radius:16px;padding:32px;max-width:700px;margin:0 auto 30px;">
+  <p style="font-family:'Bebas Neue',cursive;font-size:clamp(14px,3vw,16px);color:rgba(255,23,68,0.7);letter-spacing:4px;margin-bottom:8px;">⚠️ MARCH 2026 DATA BREACH</p>
+  <h2 style="font-family:'Bebas Neue',cursive;font-size:clamp(28px,6vw,48px);color:#FF1744;line-height:1;margin-bottom:12px;">LLOYDS OWES YA<br>COMPENSATION 💷</h2>
+  <p style="font-size:15px;color:rgba(255,255,255,0.75);line-height:1.7;margin-bottom:12px;">In March 2026 Lloyds Banking Group had a data incident where some customers were shown other customers transaction information in their mobile banking apps. If ya a Lloyds customer — ya have the right to ask if ya data was involved and claim compensation for distress.</p>
+  <p style="font-size:15px;color:rgba(255,255,255,0.75);line-height:1.7;margin-bottom:16px;">Copy and paste this letter. Send it to <strong style="color:#FF1744;">complaints@lloyds.com</strong></p>
+
+  <div style="background:#000;border:1px solid #333;border-radius:10px;padding:20px;font-family:monospace;font-size:13px;color:rgba(255,255,255,0.8);line-height:1.8;margin-bottom:16px;" id="complaint-text">
+Subject: Formal Complaint – Lloyds Banking App Data Exposure Incident<br><br>
+Dear Lloyds Banking Group,<br><br>
+I am writing to make a formal complaint regarding the recent incident reported on 12 March 2026 involving Lloyds Banking Group mobile banking apps, where some customers were reportedly shown transaction information belonging to other customers.<br><br>
+Please investigate my accounts and confirm in writing whether any of my personal or financial data was involved in this incident.<br><br>
+In particular, please confirm:<br><br>
+1. Whether any of my personal or banking data was displayed, exposed, or accessible to another customer or third party.<br>
+2. If so, what specific categories of data were involved.<br>
+3. The date and time of any exposure and the duration for which the data was visible.<br>
+4. Whether my data was actually viewed by another person, or only potentially accessible.<br>
+5. Whether Lloyds has evidence that my information was accessed by any other individual.<br>
+6. What steps Lloyds has taken to secure my account and prevent recurrence.<br>
+7. Whether any action is required from me to protect my account.<br><br>
+This incident has caused me significant concern regarding the safety of my personal and financial data. I therefore ask that you also consider appropriate compensation for the distress, inconvenience, and time spent addressing this issue.<br><br>
+Please treat this as a formal complaint and provide your written response within 8 weeks as required by FCA regulations.<br><br>
+Yours faithfully,<br>
+[Your Name]<br>
+[Your Account Number]<br>
+[Your Date of Birth]
+  </div>
+
+  <button onclick="copyComplaint()" style="background:#FF1744;color:#fff;font-family:'Bebas Neue',cursive;font-size:24px;padding:14px 32px;border-radius:8px;border:none;cursor:pointer;letter-spacing:1px;width:100%;margin-bottom:10px;">COPY COMPLAINT LETTER 📋</button>
+  <p id="copy-confirm" style="color:#00E676;font-weight:900;text-align:center;font-size:14px;display:none;">✅ Copied! Paste into ya email to complaints@lloyds.com</p>
+  <p style="font-size:12px;color:rgba(255,255,255,0.3);text-align:center;margin-top:8px;">Lloyds must respond within 8 weeks. If they don't — escalate to the Financial Ombudsman for free.</p>
+</div>
+
+<script>
+function copyComplaint() {
+  var text = "Subject: Formal Complaint – Lloyds Banking App Data Exposure Incident\n\nDear Lloyds Banking Group,\n\nI am writing to make a formal complaint regarding the recent incident reported on 12 March 2026 involving Lloyds Banking Group mobile banking apps, where some customers were reportedly shown transaction information belonging to other customers.\n\nPlease investigate my accounts and confirm in writing whether any of my personal or financial data was involved in this incident.\n\nIn particular, please confirm:\n\n1. Whether any of my personal or banking data was displayed, exposed, or accessible to another customer or third party.\n2. If so, what specific categories of data were involved.\n3. The date and time of any exposure and the duration for which the data was visible.\n4. Whether my data was actually viewed by another person, or only potentially accessible.\n5. Whether Lloyds has evidence that my information was accessed by any other individual.\n6. What steps Lloyds has taken to secure my account and prevent recurrence.\n7. Whether any action is required from me to protect my account.\n\nThis incident has caused me significant concern regarding the safety of my personal and financial data. I therefore ask that you also consider appropriate compensation for the distress, inconvenience, and time spent addressing this issue.\n\nPlease treat this as a formal complaint and provide your written response within 8 weeks as required by FCA regulations.\n\nYours faithfully,\n[Your Name]\n[Your Account Number]\n[Your Date of Birth]";
+  navigator.clipboard.writeText(text).then(function() {
+    document.getElementById("copy-confirm").style.display = "block";
+    setTimeout(function(){ document.getElementById("copy-confirm").style.display = "none"; }, 4000);
+  });
+}
+</script>
+
 <div class="cards" id="deals">
   <h2 class="impact"><span class="y">THE DEALS.</span> <span class="w">RIGHT NOW.</span></h2>
   <p class="cards-sub">real money. proper banks. no catch. ends 30 april 2026.</p>
